@@ -96,6 +96,19 @@
 	\extraheadheight[52mm]{0mm}%
 \fi%
 
+\newcommand{\nomeMatricula}{%
+	\begin{tabular}{| p{.2\textwidth} | p{.75\textwidth} |}%
+		\hline%
+		\textbf{Matrícula} & \textbf{Nome}\\\hline%
+		& \\ \hline%
+	\end{tabular}
+}%
+
+\newcommand{\outrasInformacoes}{%
+	\emph{Escreva seu nome e matrícula a caneta em todas as folhas. A compreensão
+	do enunciado de cada questão também está sendo avaliada.}%
+}%
+
 \firstpageheader{%
 	\begin{minipage}[c]{.6\textwidth}%
 		\includegraphics[height=3em]{CIC_header}%
@@ -113,11 +126,7 @@
 		{%\large\vspace{-1\baselineskip}%
 		\ifx\subdoc@UnBExam\@empty\else\hfill\textbf{\subdoc@UnBExam}\hfill\fi}%
 	\else%
-		\begin{tabular}{| p{.2\textwidth} | p{.75\textwidth} |}%
-			\hline%
-			\textbf{Matrícula} & \textbf{Nome}\\\hline%
-			& \\ \hline%
-		\end{tabular}\\%
-		\emph{Escreva seu nome e matrícula a caneta em todas as folhas. A compreensão do enunciado de cada questão também está sendo avaliada.}
+		\nomeMatricula\\%
+		\outrasInformacoes%
 	\fi%
 }{}{}%
