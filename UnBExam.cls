@@ -46,7 +46,7 @@
 \data{}%
 \ifnum\month<3%
     \periodo{\the\year/0}%
-\else\ifnum\month<7%
+\else\ifnum\month<8%
     \periodo{\the\year/1}%
 \else%
     \periodo{\the\year/2}%
